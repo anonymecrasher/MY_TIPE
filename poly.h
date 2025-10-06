@@ -5,6 +5,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+struct etat{{
+    int x;
+    int **tab;
+}
 // initialisation de tout les polynome
 int **init_all_p(void);
 
@@ -14,6 +18,8 @@ int eval(int *p, int n, int x);
 
 // update wich p
 void u_p(int **all_p,int **p,int i);
+
+// generate a number and  update wich polynome
 
 
 
