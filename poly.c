@@ -81,6 +81,9 @@ int **init_all_p(void){// 73 73 73 73 73 73 73 73 73 73 73 73 73 73
   )
 }
 
+void u_p(int **all_p,int **p,int i){
+  p = all_p[i];
+}
 
 
 
