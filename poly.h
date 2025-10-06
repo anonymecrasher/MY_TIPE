@@ -5,10 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-struct etat{{
-    int x;
-    int **tab;
-}
+struct etat;
 // initialisation de tout les polynome
 int **init_all_p(void);
 
