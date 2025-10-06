@@ -12,6 +12,8 @@ int **init_all_p(void);
 // evaluation of the polynom in x
 int eval(int *p, int n, int x);
 
+// update wich p
+void u_p(int **all_p,int **p,int i);
 
 
 
