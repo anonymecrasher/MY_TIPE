@@ -1,5 +1,10 @@
 #import 'poly.h'
 
+struct etat{
+    int x;
+    int **p;
+}
+
 int **init_all_p(void){// 73 73 73 73 73 73 73 73 73 73 73 73 73 73
   int **p = malloc(73 * sizeof(int*));
   for (int i = 0; i < 73; i++){
@@ -83,6 +88,11 @@ int **init_all_p(void){// 73 73 73 73 73 73 73 73 73 73 73 73 73 73
 
 
 
+void u_p(int **all_p,int **p,int i){
+  p = all_p[i];
+}
+
+
 
 int eval(int *p, int n, int x) {
   int ret = p[n]
@@ -90,4 +100,14 @@ int eval(int *p, int n, int x) {
     ret = (ret * x) + p[i]
   }
   return ret;
+}
+int generator(struct etat e){
+  eval(e.p,219,e.x)
+}
+void main(int argc,char *argv[]){
+  int **all_p = init_all_p();
+  struct etat e;
+  e.x = 902;
+  e.p = all_p[63]
+  
 }
